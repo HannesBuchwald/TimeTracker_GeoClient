@@ -12,12 +12,10 @@ TimeTracker GeoClient is an Android GPS tracking application.
 
 ## License
 
-    The basic Android application is from
-    Anton Tananaev ([anton@traccar.org](mailto:anton@traccar.org))
+    The basic Android application is from Anton Tananaev ([anton@traccar.org](mailto:anton@traccar.org))
     and under Apache License, Version 2.0.
 
-    The content and extensions of this Android Application
-    is under GNU AGPLv3 License.
+    The content and extensions of this Android application are under GNU AGPLv3 License.
 
     Unless required by applicable law or agreed to in writing, software
     distributed under the License is distributed on an "AS IS" BASIS,
