@@ -1,10 +1,10 @@
-# [GeoTimeTracker Client for Android](https://www.traccar.org/client)
+# [TimeTracker GeoClient for Android](https://www.traccar.org/client)
 
-[![Get it on Google Play](http://www.tananaev.com/badges/google-play.svg)](https://play.google.com/store/apps/details?id=org.traccar.client) [![Get it on F-Droid](http://www.tananaev.com/badges/f-droid.svg)](https://f-droid.org/repository/browse/?fdid=org.traccar.client)
+<!-- [![Get it on Google Play](http://www.tananaev.com/badges/google-play.svg)](https://play.google.com/store/apps/details?id=org.traccar.client) [![Get it on F-Droid](http://www.tananaev.com/badges/f-droid.svg)](https://f-droid.org/repository/browse/?fdid=org.traccar.client) -->
 
 ## Overview
 
-GeoTimeTracker Client is an Android GPS tracking application.
+TimeTracker GeoClient is an Android GPS tracking application.
 
 ## Team
 
