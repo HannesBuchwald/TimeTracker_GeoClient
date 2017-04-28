@@ -1,4 +1,4 @@
-package cc.timetracker.getmygeop;
+package cc.timetracker.geotracker;
 
 import org.junit.Test;
 

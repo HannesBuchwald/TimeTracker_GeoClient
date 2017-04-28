@@ -21,8 +21,9 @@ import java.util.Date;
 
 public class Position {
 
-    public Position(){};
 
+    public Position() {
+    }
 
     public Position(String deviceId, Location location, double battery) {
         this.deviceId = deviceId;
@@ -70,6 +71,5 @@ public class Position {
     private double battery;
     public double getBattery() { return battery; }
     public void setBattery(double battery) { this.battery = battery; }
-
 
 }

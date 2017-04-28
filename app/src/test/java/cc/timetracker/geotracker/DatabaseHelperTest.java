@@ -12,9 +12,6 @@ import org.robolectric.annotation.Config;
 
 import java.util.Date;
 
-import cc.timetracker.geotracker.DatabaseHelper;
-import cc.timetracker.geotracker.Position;
-
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 

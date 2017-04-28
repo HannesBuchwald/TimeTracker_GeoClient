@@ -48,7 +48,6 @@ public abstract class PositionProvider {
     protected long interval;
     protected double distance;
     protected double angle;
-    protected String provider;
 
     private Location lastLocation;
 
@@ -63,9 +62,6 @@ public abstract class PositionProvider {
         interval = Long.parseLong(preferences.getString(MainActivity.KEY_INTERVAL, null)) * 1000;
         distance = Integer.parseInt(preferences.getString(MainActivity.KEY_DISTANCE, null));
         angle = Integer.parseInt(preferences.getString(MainActivity.KEY_ANGLE, null));
-        provider = preferences.getString(MainActivity.KEY_PROVIDER, null);
-
-
 
         if (distance > 0 || angle > 0) {
             requestInterval = MINIMUM_INTERVAL;
@@ -101,7 +97,7 @@ public abstract class PositionProvider {
 
     @TargetApi(Build.VERSION_CODES.ECLAIR)
     public static double getBatteryLevel(Context context) {
-        if (android.os.Build.VERSION.SDK_INT > Build.VERSION_CODES.ECLAIR) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.ECLAIR) {
             Intent batteryIntent = context.registerReceiver(null, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
             int level = batteryIntent.getIntExtra(BatteryManager.EXTRA_LEVEL, 0);
             int scale = batteryIntent.getIntExtra(BatteryManager.EXTRA_SCALE, 1);

@@ -40,7 +40,6 @@ public class CreateJson {
               "created_at": 1,
               "longitude": 1,
               "latitude": 1,
-              "provider": "GPS",
               "marker-color": 1,
               "gps_altitude": 1,
               "gps_speed": 1,

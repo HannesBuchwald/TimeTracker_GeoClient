@@ -130,7 +130,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 position.setCourse(cursor.getDouble(cursor.getColumnIndex("course")));
                 position.setBattery(cursor.getDouble(cursor.getColumnIndex("battery")));
 
-
             } else {
                 return null;
             }

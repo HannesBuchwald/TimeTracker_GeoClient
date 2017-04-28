@@ -10,9 +10,6 @@ import org.robolectric.annotation.Config;
 
 import java.util.Date;
 
-import cc.timetracker.geotracker.Position;
-import cc.timetracker.geotracker.ProtocolFormatter;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricGradleTestRunner.class)

@@ -1,4 +1,4 @@
-package cc.timetracker.getmygeop;
+package cc.timetracker.geotracker;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("cc.timetracker.getmygeop", appContext.getPackageName());
+        assertEquals("cc.timetracker.geotracker", appContext.getPackageName());
     }
 }
