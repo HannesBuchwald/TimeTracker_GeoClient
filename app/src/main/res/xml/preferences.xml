@@ -44,8 +44,7 @@
         android:key="distance"
         android:numeric="integer"
         android:summary="@string/settings_distance_summary"
-        android:title="@string/settings_distance_title"
-        />
+        android:title="@string/settings_distance_title" />
 
     <EditTextPreference
         android:defaultValue="0"

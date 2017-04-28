@@ -41,8 +41,7 @@
         android:key="interval"
         android:numeric="integer"
         android:summary="@string/settings_interval_summary"
-        android:title="@string/settings_interval_title"
-        />
+        android:title="@string/settings_interval_title" />
 
     <EditTextPreference
         android:defaultValue="0"
