@@ -79,7 +79,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 "altitude REAL," +
                 "speed REAL," +
                 "course REAL," +
-                "battery REAL)");
+                "battery REAL," +
+                "accuracy REAL," +
+                "provider TEXT)");
     }
 
     @Override
@@ -98,6 +100,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put("speed", position.getSpeed());
         values.put("course", position.getCourse());
         values.put("battery", position.getBattery());
+        values.put("accuracy", position.getAccuracy());
+        values.put("provider", position.getProvider());
+
         db.insertOrThrow("position", null, values);
     }
 
@@ -129,6 +134,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 position.setSpeed(cursor.getDouble(cursor.getColumnIndex("speed")));
                 position.setCourse(cursor.getDouble(cursor.getColumnIndex("course")));
                 position.setBattery(cursor.getDouble(cursor.getColumnIndex("battery")));
+                position.setAccuracy(cursor.getDouble(cursor.getColumnIndex("accuracy")));
+                position.setProvider(cursor.getString(cursor.getColumnIndex("provider")));
+
 
             } else {
                 return null;

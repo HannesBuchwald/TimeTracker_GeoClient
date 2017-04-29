@@ -73,8 +73,6 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
 //        }
 
 
-
-
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         addPreferencesFromResource(R.xml.preferences);
         initPreferences();
@@ -187,7 +185,6 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         findPreference(KEY_PROVIDER).setSummary(sharedPreferences.getString(KEY_PROVIDER, null));
 
 
-
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
         alarmIntent = PendingIntent.getBroadcast(this, 0, new Intent(this, AutostartReceiver.class), 0);
 
@@ -282,23 +279,41 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
         // !!! end own code !!!
     }
 
+
+    //public static MenuItem gps;
+
+    static public void setGPSText(float on) {
+
+        if (menu != null) {
+            MenuItem gps = menu.findItem(R.id.gps);
+            if (gps != null) {
+                gps.setTitle((int) on + "m");
+            }
+        }
+    }
+
+    public static Menu menu;
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main, menu);
+
+        this.menu = menu;
+
+        // MenuItem gps = menu.getItem(R.id.gps);
+
         return super.onCreateOptionsMenu(menu);
 
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
+
         if (item.getItemId() == R.id.status) {
             startActivity(new Intent(this, StatusActivity.class));
             return true;
-        }
-
-
-
-        else if (item.getItemId() == R.id.about) {
+        } else if (item.getItemId() == R.id.about) {
             startActivity(new Intent(this, AboutActivity.class));
             return true;
         }

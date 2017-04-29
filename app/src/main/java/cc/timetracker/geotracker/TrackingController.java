@@ -73,6 +73,7 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
         networkManager = new NetworkManager(context, this);
         isOnline = networkManager.isOnline();
 
+
         address = preferences.getString(MainActivity.KEY_ADDRESS, null);
         port = 0;
         secure = false;
@@ -129,6 +130,7 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
             read();
         }
         this.isOnline = isOnline;
+
     }
 
     //
@@ -180,6 +182,7 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
                         read();
                         isWaiting = false;
                     }
+
                 }
                 unlock();
             }
@@ -189,6 +192,8 @@ public class TrackingController implements PositionProvider.PositionListener, Ne
 
     private void read() {
         log("read", null);
+        // Update GPS Signal Sign
+
         lock();
         databaseHelper.selectPositionAsync(new DatabaseHelper.DatabaseHandler<Position>() {
             @Override

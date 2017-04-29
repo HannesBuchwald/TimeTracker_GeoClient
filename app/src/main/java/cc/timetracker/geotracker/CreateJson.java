@@ -44,6 +44,8 @@ public class CreateJson {
               "gps_altitude": 1,
               "gps_speed": 1,
               "gps_course": 1,
+              "gps_accuracy": 1,
+              "gps_provider": "GPS",
               "device_battery": 1,
               "temperature": 1,
               "dew_point": 1,
@@ -77,6 +79,8 @@ public class CreateJson {
         properties_content.addProperty("gps_altitude", position.getAltitude());
         properties_content.addProperty("gps_speed", position.getSpeed());
         properties_content.addProperty("gps_course", position.getCourse());
+        properties_content.addProperty("gps_accuracy", position.getAccuracy());
+        properties_content.addProperty("gps_provider", position.getProvider());
         properties_content.addProperty("device_battery", position.getBattery());
 
 //        properties_content.addProperty("temperature", 1);

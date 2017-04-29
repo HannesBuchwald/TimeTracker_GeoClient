@@ -77,6 +77,11 @@ public abstract class PositionProvider {
     public abstract void stopUpdates();
 
     protected void updateLocation(Location location) {
+
+        if(location!= null) {
+            MainActivity.setGPSText(location.getAccuracy());
+        }
+
         if (location != null && (lastLocation == null
                 || location.getTime() - lastLocation.getTime() >= interval
                 || distance > 0 && DistanceCalculator.distance(
@@ -84,7 +89,7 @@ public abstract class PositionProvider {
                         location.getLongitude(),
                         lastLocation.getLatitude(),
                         location.getLongitude()) >= distance
-                || angle > 0 && Math.abs(location.getBearing() - lastLocation.getBearing()) >= angle)) {
+                || angle > 1 && Math.abs(location.getBearing() - lastLocation.getBearing()) >= angle)) {
 
             Log.i(TAG, "location new");
             lastLocation = location;

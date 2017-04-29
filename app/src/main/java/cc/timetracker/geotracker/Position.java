@@ -33,6 +33,8 @@ public class Position {
         altitude = location.getAltitude();
         speed = location.getSpeed() * 1.943844; // speed in knots
         course = location.getBearing();
+        accuracy = location.getAccuracy();
+        provider = location.getProvider();
         this.battery = battery;
     }
 
@@ -71,5 +73,13 @@ public class Position {
     private double battery;
     public double getBattery() { return battery; }
     public void setBattery(double battery) { this.battery = battery; }
+
+    private double accuracy;
+    public double getAccuracy() { return accuracy; }
+    public void setAccuracy(double accuracy) { this.accuracy = accuracy; }
+
+    private String provider;
+    public String getProvider() { return provider; }
+    public void setProvider(String provider) { this.provider = provider; }
 
 }

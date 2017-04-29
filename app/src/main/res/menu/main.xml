@@ -2,6 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/gps"
+        android:title=""
+        android:showAsAction="always"
+        />
+
+    <item
         android:id="@+id/status"
         android:title="@string/menu_status"
         android:showAsAction="always" />

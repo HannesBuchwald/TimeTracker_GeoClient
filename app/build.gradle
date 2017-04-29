@@ -7,8 +7,8 @@ android {
         applicationId "cc.timetracker.geotracker"
         minSdkVersion 9
         targetSdkVersion 25
-        versionCode 01
-        versionName '1.0'
+        versionCode 02
+        versionName '1.1'
         applicationId 'cc.timetracker.geotracker'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

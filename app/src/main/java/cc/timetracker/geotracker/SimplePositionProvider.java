@@ -25,6 +25,9 @@ import android.util.Log;
 @SuppressWarnings("MissingPermission")
 public class SimplePositionProvider extends PositionProvider implements LocationListener {
 
+    protected static final String TAG = SimplePositionProvider.class.getSimpleName();
+
+
     public SimplePositionProvider(Context context, PositionListener listener) {
         super(context, listener);
         if (!type.equals(LocationManager.NETWORK_PROVIDER)) {
