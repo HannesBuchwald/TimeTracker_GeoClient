@@ -79,8 +79,6 @@ public class RequestManager {
 
         String address = preferences.getString(MainActivity.KEY_ADDRESS, null);
 
-//        address = "https://radiant-temple-85392.herokuapp.com/api/status/";
-
         // !!!New Code!!!
         // Own implementation of PUT Service
 
@@ -117,21 +115,7 @@ public class RequestManager {
 //                return false;
 //            }
 
-
-            Log.d(TAG, "send ddddd: " + request);
-
             return true;
-
-
-            // Old code
-//            URL url = new URL(request);
-//            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//            connection.setReadTimeout(TIMEOUT);
-//            connection.setConnectTimeout(TIMEOUT);
-//            connection.connect();
-//            inputStream = connection.getInputStream();
-//            while (inputStream.read() != -1);
-//            return true;
 
         } catch (IOException error) {
             return false;

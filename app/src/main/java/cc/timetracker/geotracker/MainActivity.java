@@ -55,7 +55,7 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
     public static final String KEY_PROVIDER = "provider";
     public static final String KEY_STATUS = "status";
 
-    static String SERVER_ADDRESS = "https://radiant-temple-85392.herokuapp.com/api/status/";
+    static String SERVER_ADDRESS = "https://server-timetracker.herokuapp.com/a5c8e07368efde43/status/";
 
     private static final int PERMISSIONS_REQUEST_LOCATION = 2;
 
@@ -288,6 +288,16 @@ public class MainActivity extends PreferenceActivity implements OnSharedPreferen
             MenuItem gps = menu.findItem(R.id.gps);
             if (gps != null) {
                 gps.setTitle((int) on + "m");
+            }
+        }
+    }
+
+    static public void setGPSText(String text) {
+
+        if (menu != null) {
+            MenuItem gps = menu.findItem(R.id.gps);
+            if (gps != null) {
+                gps.setTitle(text);
             }
         }
     }

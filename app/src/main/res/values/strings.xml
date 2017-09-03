@@ -46,8 +46,8 @@
   <string name="menu_shortcuts">Add shortcuts</string>
   <string name="menu_clear">Clear</string>
   <string name="about_description">Real time GPS tracker for Android devices.</string>
-  <string name="about_license">This application is free and open source, source code is licensed under GNU AGPLv3 and available on GitHub.</string>
-  <string name="about_web">For more information visit\www.timetracker.cc</string>
+  <string name="about_license">This application is free and open source, the source code is licensed under GNU AGPLv3 and available on GitHub.</string>
+  <string name="about_web">For more information visit \n www.timetracker.cc</string>
   <string name="status_service_create">Service created</string>
   <string name="status_service_destroy">Service destroyed</string>
   <string name="status_send_success">Send successfully</string>
@@ -58,9 +58,9 @@
   <string name="hidden_alert">The app has been hidden. To open it again please dial 8722227 (TRACCAR).</string>
 
   <string name="basic_app_name">GeoTracking Client</string>
-  <string name="traccar_about_license">It is free and open source, source code is licensed under Apache License Version 2.0 and available on GitHub.</string>
+  <string name="traccar_about_license">It is free and open source, the source code is licensed under Apache License Version 2.0 and available on GitHub.</string>
   <string name="traccar_about_description">The basic Application is from Traccar Android Client (4.1).</string>
-  <string name="traccar_about_web">For more information visit\nwww.traccar.org/client</string>
+  <string name="traccar_about_web">For more information visit \n www.traccar.org/client</string>
   <string name="version">Version: V1.0</string>
 
   <!--<string name="delete">Delete Data</string>-->

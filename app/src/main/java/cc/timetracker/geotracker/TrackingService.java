@@ -131,6 +131,7 @@ public class TrackingService extends Service {
 
         if (trackingController != null) {
             trackingController.stop();
+            MainActivity.setGPSText("");
         }
     }
 
